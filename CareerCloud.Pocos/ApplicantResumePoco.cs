@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CareerCloud.Pocos
 {[Table("Applicant_Resumes")]
-    class ApplicantResumePoco
+    class ApplicantResumePoco:IPoco
     {
         [Key]
         public Guid Id { get; set; }
@@ -17,6 +17,6 @@ namespace CareerCloud.Pocos
 
         public string Resume { get; set; }
         [Column("Last_Updated")]
-        public DateTime LastUpdated { get; set; }
+        public DateTime? LastUpdated { get; set; }
     }
 }
