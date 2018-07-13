@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CareerCloud.Pocos
 {[Table("Applicant_Job_Applications")]
-    class ApplicantJobApplicationPoco:IPoco
+    public class ApplicantJobApplicationPoco:IPoco
     {
         [Key]
         public Guid Id { get; set; }
